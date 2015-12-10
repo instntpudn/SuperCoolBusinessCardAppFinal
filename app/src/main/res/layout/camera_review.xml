@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundcolor">
+    android:weightSum="1"
+    android:id="@+id/review"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/accept"
+        android:background="@mipmap/check_mark"
+        android:layout_gravity="bottom|center_horizontal|right"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="250dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cancel"
+        android:background="@mipmap/x_mark"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="250dp" />
+
+</RelativeLayout>
