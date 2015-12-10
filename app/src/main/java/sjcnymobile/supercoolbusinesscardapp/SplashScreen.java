@@ -1,10 +1,10 @@
-package supercoolbusinessapp.controller;
+package sjcnymobile.supercoolbusinesscardapp;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import sjcnymobile.view.R;
+//import sjcnymobile.view.R;
 
 /**
  * Created by Anthony on 11/15/2015.
