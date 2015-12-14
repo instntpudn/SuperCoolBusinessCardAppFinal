@@ -110,8 +110,69 @@ public class Bizcard
     @Override
     public String toString()
     {
-//        String name, String bizName, String address, String city,
-//            String state, String zip, String phone, String description, String email;
-        return id + " Name " + name + ", BizName " + businessName + ", address " + address + ", phone " + phone + ", description " + description + ", email " + email+ ", website " + website + ", image " + imageName;
+        StringBuilder sb = new StringBuilder();
+        if(id!=null)
+        {
+            sb.append("id: ");
+            sb.append(id);
+            sb.append("; ");
+        }
+
+        if(name!=null)
+        {
+            sb.append("name: ");
+            sb.append(name);
+            sb.append("; ");
+        }
+
+        if(businessName!=null)
+        {
+            sb.append("business name: ");
+            sb.append(businessName);
+            sb.append("; ");
+        }
+
+        if(address!=null )
+        {
+            sb.append("address: ");
+            sb.append(address);
+            sb.append("; ");
+        }
+
+        if(phone!=null)
+        {
+            sb.append("phone: ");
+            sb.append(phone);
+            sb.append("; ");
+        }
+
+        if(description!=null)
+        {
+            sb.append("description: ");
+            sb.append(description);
+            sb.append("; ");
+        }
+
+        if(email!=null)
+        {
+            sb.append("email: ");
+            sb.append(email);
+            sb.append("; ");
+        }
+
+        if(website!=null)
+        {
+            sb.append("website: ");
+            sb.append(website);
+            sb.append("; ");
+        }
+
+        if(imageName!=null)
+        {
+            sb.append("image: ");
+            sb.append(imageName);
+            sb.append("; ");
+        }
+        return sb.toString();
     }
 }
