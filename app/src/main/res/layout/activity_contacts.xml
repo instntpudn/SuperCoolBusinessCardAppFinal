@@ -5,29 +5,33 @@
     android:layout_height="match_parent"
     android:background ="#7acc8a">
 
+    <ImageView
+        android:id="@+id/bcimage"
+        android:layout_gravity="center_horizontal|top"
+        android:contentDescription="BC image"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:minHeight="160dp"
+        android:nestedScrollingEnabled="true"
+        android:baselineAlignBottom="true"
+        android:backgroundTint="#81e2db" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:id="@+id/submit"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#3a6a8e">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:minHeight="160dp">
 
-            <ImageView
-                android:id="@+id/bcimage"
-                android:layout_gravity="center_horizontal|top"
-                android:contentDescription="BC image"
-                android:background="@mipmap/ic_launcher"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:minHeight="160dp"
-                android:nestedScrollingEnabled="true"
-                android:baselineAlignBottom="true"
-                android:backgroundTint="#81e2db" /></LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -155,5 +159,31 @@
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:background="#81e2db" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri"
+                android:ems="10"
+                android:id="@+id/website"
+                android:layout_gravity="center"
+                android:hint="Website"/>
+
+
+        </LinearLayout>
     </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
