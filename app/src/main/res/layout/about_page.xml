@@ -3,4 +3,33 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:text="ABO   BNGHYU67          
+
+
+            There are probably people who take every business
+            card they receive and either pile them up or lose
+            them before they get a chance to save the contents.
+            This app allows the user to store all of their business
+            cards in an organized, user-friendly way and then
+            stores them alphabetically (in the app) to retrieve
+            at any time.
+
+            The basics of the app are pretty straightforward.
+            You open the program and either search for a contact
+            or add a new one.  Our scanning technology and ability
+            to accurately categorize the cellular and fax numbers
+            correctly is what sets us apart from competitors.
+
+            You can try our Lite version at no cost or you can
+            download the full version for $2 by clicking the link below.  "
+        android:background="@mipmap/backgroundcolor"
+        android:linksClickable="true" />
+
+
 </LinearLayout>
