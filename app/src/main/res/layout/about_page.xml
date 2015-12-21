@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundcolor"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="382dp"
-        android:layout_height="wrap_content"
+        android:layout_height="347dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
-        android:text="ABO   BNGHYU67          
+        android:text="ABOUT
 
 
             There are probably people who take every business
@@ -27,9 +29,19 @@
             correctly is what sets us apart from competitors.
 
             You can try our Lite version at no cost or you can
-            download the full version for $2 by clicking the link below.  "
+            download the full version for $2 by clicking the link
+            below.  "
         android:background="@mipmap/backgroundcolor"
-        android:linksClickable="true" />
+        android:linksClickable="true"
+        android:layout_weight="0.65" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:singleLine="true"
+        android:background="@mipmap/paypal"
+        android:layout_weight="0.15" />
 
 
 </LinearLayout>
