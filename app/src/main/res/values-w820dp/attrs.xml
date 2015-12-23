@@ -10,5 +10,6 @@
 		<attr name="minQuantity" format="integer"/>
 		<attr name="maxQuantity" format="integer"/>
 		<attr name="Names" format="string" />
+
 	</declare-styleable>	
 </resources>
