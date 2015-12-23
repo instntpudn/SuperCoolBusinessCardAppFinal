@@ -44,8 +44,9 @@
                 android:layout_height="wrap_content"
                 android:text="Business Name"
                 android:background="#3a6a8e"
-                android:autoText="false"
-                android:textColor=""/>
+                android:autoText="false">
+
+            </TextView>
 
             <EditText
                 android:layout_width="match_parent"
