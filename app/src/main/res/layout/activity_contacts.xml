@@ -3,19 +3,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background ="#7acc8a">
+    android:background ="#ffff">
 
     <ImageView
         android:id="@+id/bcimage"
         android:layout_gravity="center_horizontal|top"
         android:contentDescription="BC image"
         android:background="@mipmap/ic_launcher"
-        android:layout_width="fill_parent"
-        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:minHeight="160dp"
         android:nestedScrollingEnabled="true"
         android:baselineAlignBottom="true"
-        android:backgroundTint="#ffff" />
+        android:backgroundTint="#3a6a8e" />
 
     <Button
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#3a6a8e">
+        android:background="#ffff">
 
 
 
@@ -43,8 +43,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Business Name"
-                android:background="#ffff"
-                android:autoText="false" />
+                android:background="#3a6a8e"
+                android:autoText="false"
+                android:textColor=""/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -62,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:background="#ffff"/>
+                android:background="#3a6a8e"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -82,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Address"
-                android:background="#ffff" />
+                android:background="#3a6a8e" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -102,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Telephone"
-                android:background="#ffff" />
+                android:background="#3a6a8e" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -123,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Description"
-                android:background="#ffff" />
+                android:background="#3a6a8e" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -146,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Email"
-                android:background="#ffff" />
+                android:background="#3a6a8e" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -170,7 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Website"
-                android:background="#ffff" />
+                android:background="#3a6a8e" />
 
             <EditText
                 android:layout_width="match_parent"
