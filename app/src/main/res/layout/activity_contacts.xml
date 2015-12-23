@@ -15,7 +15,7 @@
         android:minHeight="160dp"
         android:nestedScrollingEnabled="true"
         android:baselineAlignBottom="true"
-        android:backgroundTint="#81e2db" />
+        android:backgroundTint="#ffff" />
 
     <Button
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Business Name"
-                android:background="#81e2db"
+                android:background="#ffff"
                 android:autoText="false" />
 
             <EditText
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:background="#81e2db"/>
+                android:background="#ffff"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Address"
-                android:background="#81e2db" />
+                android:background="#ffff" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Telephone"
-                android:background="#81e2db" />
+                android:background="#ffff" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Description"
-                android:background="#81e2db" />
+                android:background="#ffff" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Email"
-                android:background="#81e2db" />
+                android:background="#ffff" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Website"
-                android:background="#81e2db" />
+                android:background="#ffff" />
 
             <EditText
                 android:layout_width="match_parent"
