@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <array name="entries">
+        <item>@mipmap/card1</item>
+        <item>@mipmap/card2</item>
+        <item>@mipmap/card3</item>
+        <item>@mipmap/card4</item>
+        <item>@mipmap/card1</item>
+        <item>@mipmap/card2</item>
+    </array>
+    <array name="names">
+        <item>The cat</item>
+        <item>The hippo</item>
+        <item>The monkey</item>
+        <item>The mouse</item>
+        <item>The panda</item>
+        <item>The rabbit</item>
+    </array>
+</resources>
