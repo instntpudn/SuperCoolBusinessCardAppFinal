@@ -37,10 +37,13 @@ public class Contacts extends AppCompatActivity {
         }
 
         Button button = (Button)findViewById(R.id.submit);
+        final Contacts thisInstance = this;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 save();
+                Intent intent = new Intent(thisInstance, MainActivity.class);
+                startActivity(intent);
             }
         });
 //        output();//For testing
