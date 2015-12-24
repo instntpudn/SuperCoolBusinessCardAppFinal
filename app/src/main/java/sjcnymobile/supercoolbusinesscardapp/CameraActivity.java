@@ -21,7 +21,8 @@ import java.io.FileOutputStream;
  */
 public class CameraActivity extends Activity {
     private static final int CAMERA_REQUEST = 1111;
-    private Button takePictureButton;
+    private Button acceptPictureButton;
+    private Button rejectPictureButton;
     private ImageView pictureImage;
 
     @Override
@@ -29,9 +30,25 @@ public class CameraActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, CAMERA_REQUEST);
+
         pictureImage = (ImageView) findViewById(R.id.imageView);
-        takePictureButton = (Button) findViewById(R.id.accept);
-        takePictureButton.setOnClickListener(new View.OnClickListener() {
+        acceptPictureButton = (Button) findViewById(R.id.accept);
+        final CameraActivity thisInstance = this;
+        acceptPictureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String root = Environment.getExternalStorageDirectory().toString();
+                String path = root + "/supercoolbusinesscardapp/photos";
+                Intent intent = new Intent(thisInstance, Contacts.class);
+                intent.putExtra("path", path);
+                startActivity(intent);
+            }
+        });
+
+        rejectPictureButton = (Button) findViewById(R.id.cancel);
+        rejectPictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
