@@ -62,7 +62,11 @@ public class CameraActivity extends Activity {
         if(requestCode == CAMERA_REQUEST) {
             Bitmap b = (Bitmap) data.getExtras().get("data");
             saveFile("savedimage.png", b);
-            pictureImage.setImageBitmap(loadFile("savedImage.png"));
+
+            if(b != null) {
+                pictureImage.setImageBitmap(loadFile("savedImage.png"));
+            }
+
         }
     }
 
