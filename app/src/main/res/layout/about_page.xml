@@ -28,9 +28,10 @@
             to accurately categorize the cellular and fax numbers
             correctly is what sets us apart from competitors.
 
-            You can try our Lite version at no cost or you can
-            download the full version for $2 by clicking the link
-            below.  "
+            There is no cost for this app but we do accept donations.
+            You can click on the PayPal link below and any amount is
+            appreciated.  We look forward to bringing more apps to
+            your phone!"
         android:background="@mipmap/backgroundcolor"
         android:linksClickable="true"
         android:layout_weight="0.65" />
