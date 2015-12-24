@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.Date;
 
 /**
  * Created by ryan on 12/9/2015.
@@ -24,6 +25,7 @@ public class CameraActivity extends Activity {
     private Button acceptPictureButton;
     private Button rejectPictureButton;
     private ImageView pictureImage;
+    String name = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +41,9 @@ public class CameraActivity extends Activity {
         acceptPictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String root = Environment.getExternalStorageDirectory().toString();
-                String path = root + "/supercoolbusinesscardapp/photos";
                 Intent intent = new Intent(thisInstance, Contacts.class);
-                intent.putExtra("path", path);
+                if(name!=null)
+                    intent.putExtra("path", name);
                 startActivity(intent);
             }
         });
@@ -61,10 +62,11 @@ public class CameraActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == CAMERA_REQUEST) {
             Bitmap b = (Bitmap) data.getExtras().get("data");
-            saveFile("savedimage.png", b);
+            name = new Date().getTime() + "";
+            saveFile(name, b);
 
             if(b != null) {
-                pictureImage.setImageBitmap(loadFile("savedImage.png"));
+                pictureImage.setImageBitmap(loadFile(name));
             }
 
         }

@@ -20,6 +20,8 @@ import android.widget.BaseAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import sjcnymobile.supercoolbusinesscardapp.DataObjects.Bizcard;
+
 //Image adapter class for the Carousel
 public class CarouselImageAdapter extends BaseAdapter {
 
@@ -47,6 +49,25 @@ public class CarouselImageAdapter extends BaseAdapter {
             mImages[i] = item;
         }
     }
+
+    public CarouselImageAdapter(Context _context,ArrayList<Bizcard> images) {
+        // TODO Auto-generated constructor stub
+        this.mContext=_context;
+        imageList=new ArrayList<Bitmap>();
+        mImages = new CarouselItem[images.size()];
+        for(int i = 0; i< images.size(); i++)
+        {
+            Bitmap originalImage = FileUtil.loadFile(images.get(i).getImageName());
+            imageList.add(originalImage);
+
+            CarouselItem item = new CarouselItem(_context);
+            item.setIndex(i);
+            item.setImageBitmap(originalImage);
+            mImages[i] = item;
+        }
+    }
+
+
 
     @SuppressWarnings("unused")
     public void SetImages(TypedArray array, TypedArray names){
